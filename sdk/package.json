@@ -1,6 +1,6 @@
 {
   "name": "unified-reading",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "SDK, CLI and stdio MCP server for the Unified Reading API: Life Path, Sun sign and Chinese zodiac for a birth date. No API key.",
   "type": "module",
   "exports": {
@@ -24,7 +24,8 @@
     "mcp.js",
     "mcp.d.ts",
     "bin/cli.js",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md"
   ],
   "engines": {
     "node": ">=18"
@@ -47,7 +48,7 @@
     "model-context-protocol",
     "mcp-server"
   ],
-  "homepage": "https://unifiedreading.com/docs",
+  "homepage": "https://unifiedreading.com",
   "bugs": {
     "url": "https://github.com/emrecolako/unified-reading/issues",
     "email": "hello@unifiedreading.com"
