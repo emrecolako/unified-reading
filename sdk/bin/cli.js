@@ -106,7 +106,8 @@ const isBin = (() => {
 })();
 if (isBin) {
   main(process.argv.slice(2)).catch((error) => {
-    if (error instanceof UsageError) {
+    // TypeError: the SDK rejected an argument before sending it.
+    if (error instanceof UsageError || error instanceof TypeError) {
       console.error(`ERROR: ${error.message}`);
       process.exit(2);
     }

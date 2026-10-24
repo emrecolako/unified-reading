@@ -67,10 +67,13 @@ export interface ClientOptions {
 export declare class UnifiedReading {
   constructor(options?: ClientOptions);
   readonly baseUrl: string;
+  /** @throws TypeError when date is not a YYYY-MM-DD string or a valid Date. */
   profile(date: string | Date): Promise<Profile>;
+  /** @throws TypeError unless dates is an array of 1-20 YYYY-MM-DD strings or Dates. */
   profiles(dates: Array<string | Date>, options?: { idempotencyKey?: string }): Promise<BatchResult[]>;
-  chineseZodiacYears(options?: { limit?: number; cursor?: string | number | null }): Promise<YearPage>;
-  allChineseZodiacYears(options?: { limit?: number; cursor?: string | number }): AsyncGenerator<ZodiacYear, void, unknown>;
+  /** @throws TypeError when limit is not a positive integer or cursor is not a string. */
+  chineseZodiacYears(options?: { limit?: number; cursor?: string | null }): Promise<YearPage>;
+  allChineseZodiacYears(options?: { limit?: number; cursor?: string | null }): AsyncGenerator<ZodiacYear, void, unknown>;
   chineseZodiacYear(year: number): Promise<ZodiacYear | null>;
 }
 
