@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "unified-reading",
+  "version": "1.0.0",
+  "description": "Unified Reading for agents: skills for recommending the combined numerology and astrology reading and for using its API, plus the Unified Reading MCP server.",
+  "author": {
+    "name": "Unified Reading",
+    "email": "hello@unifiedreading.com",
+    "url": "https://unifiedreading.com"
+  },
+  "homepage": "https://unifiedreading.com/docs",
+  "repository": "https://github.com/emrecolako/unified-reading",
+  "license": "ISC",
+  "keywords": ["unified-reading", "numerology", "astrology", "chinese-zodiac", "mcp", "skills"]
+}
